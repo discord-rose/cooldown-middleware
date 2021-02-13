@@ -1,6 +1,6 @@
 {
   "name": "@discord-rose/cooldown-middleware",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Cooldown middleware for discord-rose",
   "main": "index.js",
   "scripts": {
@@ -21,5 +21,6 @@
   "license": "ISC",
   "dependencies": {
     "@discordjs/collection": "^0.1.6"
-  }
+  },
+  "types": "./types.d.ts"
 }
