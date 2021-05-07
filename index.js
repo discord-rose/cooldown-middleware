@@ -27,7 +27,8 @@ module.exports = (makeMsg = (time) => `You're on cooldown, try again in ${(time 
       setTimeout(() => {
         currentCooldown.createdMessage = false
       }, 2000)
-      throw new Error(makeMsg(timeRemaining))
+      ctx.error(makeMsg(timeRemaining))
+      return
     }
 
     ctx.invokeCooldown = () => {
